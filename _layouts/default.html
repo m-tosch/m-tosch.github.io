@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title and page.title != site.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <!-- the theme's own stylesheet, served by GitHub Pages: nothing is loaded from other websites -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <style>
+      .site-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #d0d7de; font-size: 14px; color: #57606a; }
+      .site-footer a { margin-right: 1.2rem; }
+    </style>
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      {{ content }}
+      <footer class="site-footer">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
+        <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+      </footer>
+    </div>
+  </body>
+</html>

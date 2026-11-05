@@ -1,0 +1,4 @@
+title: Maximilian Tosch
+description: Apps for Android
+# app-ads.txt must stay reachable at the site's root (AdMob checks it there)
+include: [app-ads.txt]
