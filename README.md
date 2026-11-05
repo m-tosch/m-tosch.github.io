@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Maximilian Tosch
+permalink: /
 ---
 
 # Maximilian Tosch
