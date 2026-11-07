@@ -2,3 +2,10 @@ title: Maximilian Tosch
 description: Apps for Android
 # app-ads.txt must stay reachable at the site's root (AdMob checks it there)
 include: [app-ads.txt]
+# the home page is README.md (GitHub Pages makes a README the index page). It has no front matter, so GitHub's own
+# view of the repository shows no front-matter table above it; its layout comes from here instead
+defaults:
+  - scope:
+      path: "README.md"
+    values:
+      layout: default
